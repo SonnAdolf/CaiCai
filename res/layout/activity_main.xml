@@ -12,7 +12,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="每天早八点，准时更新十首歌，希望我的朋友蔡蔡，快乐每一天!" />
 
     <Button
         android:id="@+id/music_btn"
@@ -21,6 +21,6 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="38dp"
-        android:text="Button" />
+        android:text="无名电台" />
 
 </RelativeLayout>

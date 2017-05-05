@@ -33,7 +33,9 @@ public class MainActivity extends Activity {
 		musicLstBtn.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this, MusicLstActivity.class);
+				//Intent intent = new Intent(MainActivity.this, MusicLstActivity.class);
+				//startActivity(intent);
+				Intent intent = new Intent(MainActivity.this, MusicPlayerActivity.class);
 				startActivity(intent);
 			}
 		});

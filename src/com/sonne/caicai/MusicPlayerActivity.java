@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.Window;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -33,6 +32,6 @@ public class MusicPlayerActivity extends Activity {
         		return true;
         	}
         });
-        webview.loadUrl("http://118.89.29.170/RiXiang_blog/");
+        webview.loadUrl("http://118.89.29.170/RiXiang_blog/radio/list.form");
     }
 }
