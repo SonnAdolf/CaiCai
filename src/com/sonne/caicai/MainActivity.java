@@ -1,13 +1,13 @@
 package com.sonne.caicai;
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
-import android.view.Window;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.Button;
 
 /**
@@ -36,6 +36,17 @@ public class MainActivity extends Activity {
 				//Intent intent = new Intent(MainActivity.this, MusicLstActivity.class);
 				//startActivity(intent);
 				Intent intent = new Intent(MainActivity.this, MusicPlayerActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		Button movieBtn = (Button) findViewById(R.id.movie_btn);
+		movieBtn.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//Intent intent = new Intent(MainActivity.this, MusicLstActivity.class);
+				//startActivity(intent);
+				Intent intent = new Intent(MainActivity.this, MoviePlayerActivity.class);
 				startActivity(intent);
 			}
 		});

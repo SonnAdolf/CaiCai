@@ -18,7 +18,7 @@ public class MusicPlayerActivity extends Activity {
 	public static final String TAG = "MusicPlayerActivity";
 	private WebView webview; 
 	
-    @SuppressLint("SetJavaScriptEnabled") @Override
+    @SuppressLint({ "SetJavaScriptEnabled", "NewApi" }) @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 		Log.d(TAG, "onCreate");
@@ -26,12 +26,15 @@ public class MusicPlayerActivity extends Activity {
         setContentView(R.layout.music_player_layout); 
         webview = (WebView)findViewById(R.id.webView1);
         webview.getSettings().setJavaScriptEnabled(true);
+        //webview.getSettings().setBlockNetworkImage(true); 
+        webview.getSettings().setDomStorageEnabled(true);
+        webview.getSettings().setAllowFileAccessFromFileURLs(true);
         webview.setWebViewClient(new WebViewClient() {
         	public boolean shouldOverrideUrlLoading(WebView view, String url) {
         		view.loadUrl(url);
         		return true;
         	}
         });
-        webview.loadUrl("http://118.89.29.170/RiXiang_blog/radio/list.form");
+        webview.loadUrl("http://118.89.29.170/player/wuming_radio.html");
     }
 }

@@ -15,12 +15,39 @@
         android:text="每天早八点，准时更新十首歌，希望我的朋友蔡蔡，快乐每一天!" />
 
     <Button
-        android:id="@+id/music_btn"
+        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="42dp"
+        android:text="teemo video" />
+
+    <Button
+        android:id="@+id/music_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="37dp"
         android:text="无名电台" />
+
+    <Button
+        android:id="@+id/movie_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/music_btn"
+        android:layout_below="@+id/music_btn"
+        android:layout_marginTop="36dp"
+        android:text="周末影院" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/movie_btn"
+        android:layout_below="@+id/movie_btn"
+        android:layout_marginTop="23dp"
+        android:text="留言板" />
 
 </RelativeLayout>
