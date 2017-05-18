@@ -32,6 +32,10 @@
 		    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
             android:screenOrientation="landscape" >
 		</activity>
+		<activity android:name=".TeemoVideoActivity"
+		    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape" >
+		</activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
 

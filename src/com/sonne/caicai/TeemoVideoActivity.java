@@ -9,21 +9,16 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-/**
- * @author sonne
- * @date 2017-05-15
- * @description The activity of movie player.
- */
-public class MoviePlayerActivity extends Activity {
-
-	public static final String TAG = "MoviePlayerActivity";
+public class TeemoVideoActivity extends Activity {
+	
+	public static final String TAG = "TeemoVideoActivity";
 
 	private VideoView videoView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.movie_player_layout);
+		setContentView(R.layout.teemo_video_layout);
 
 		String videoUrl2 = "http://118.89.29.170/movie/movie.mp4";
 
@@ -57,9 +52,8 @@ public class MoviePlayerActivity extends Activity {
 
 		@Override
 		public void onCompletion(MediaPlayer mp) {
-			Toast.makeText(MoviePlayerActivity.this, "播放完成了",
+			Toast.makeText(TeemoVideoActivity.this, "播放完成了",
 					Toast.LENGTH_SHORT).show();
 		}
 	}
-
 }

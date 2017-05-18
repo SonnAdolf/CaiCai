@@ -33,8 +33,6 @@ public class MainActivity extends Activity {
 		musicLstBtn.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//Intent intent = new Intent(MainActivity.this, MusicLstActivity.class);
-				//startActivity(intent);
 				Intent intent = new Intent(MainActivity.this, MusicPlayerActivity.class);
 				startActivity(intent);
 			}
@@ -44,9 +42,16 @@ public class MainActivity extends Activity {
 		movieBtn.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//Intent intent = new Intent(MainActivity.this, MusicLstActivity.class);
-				//startActivity(intent);
 				Intent intent = new Intent(MainActivity.this, MoviePlayerActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		Button teemoBtn = (Button) findViewById(R.id.teemo);
+		teemoBtn.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, TeemoVideoActivity.class);
 				startActivity(intent);
 			}
 		});

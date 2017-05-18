@@ -15,7 +15,7 @@
         android:text="每天早八点，准时更新十首歌，希望我的朋友蔡蔡，快乐每一天!" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/teemo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"

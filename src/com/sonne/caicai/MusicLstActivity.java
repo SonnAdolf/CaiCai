@@ -20,6 +20,7 @@ import android.widget.ListView;
  * @description The activity of music list.
  *              2017-04-28 add the onclick listener of listview.
  */
+@Deprecated
 public class MusicLstActivity  extends Activity {
 	
 	public static final String TAG = "MusicLstActivity";
