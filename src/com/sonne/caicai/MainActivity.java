@@ -1,8 +1,12 @@
 package com.sonne.caicai;
 
+import java.util.Random;
+
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -10,6 +14,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
@@ -21,7 +26,7 @@ public class MainActivity extends Activity {
 	
 	public static final String TAG = "MainActivity";
 	
-    @Override
+    @SuppressLint("NewApi") @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 		Log.d(TAG, "onCreate");
@@ -30,6 +35,19 @@ public class MainActivity extends Activity {
 		if (savedInstanceState != null) {
 			String tempData = savedInstanceState.getString("data_key");
 			Log.d(TAG, tempData);
+		}
+		
+
+	    int s = new Random().nextInt(2)+1;
+		
+		RelativeLayout rl = (RelativeLayout)findViewById(R.id.main_layout);
+		Drawable drawable=getResources().getDrawable(R.drawable.background_main); 
+		Drawable drawable2=getResources().getDrawable(R.drawable.background_main2); 
+		
+		if (s == 1) {
+			rl.setBackground(drawable);
+		} else {
+			rl.setBackground(drawable2);
 		}
 		
 		TextView tv1 = (TextView)findViewById(R.id.main_words); 
