@@ -2,52 +2,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:gravity="top"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="每天早八点，准时更新十首歌，希望我的朋友蔡蔡，快乐每一天!" />
-
-    <Button
+    <ImageButton
         android:id="@+id/teemo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/radio_btn"
+        android:layout_marginRight="22dp"
+        android:padding="0dp"
+        android:background="@drawable/teemo" />
+    <TextView
+        android:id="@+id/radio_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="42dp"
-        android:text="teemo video" />
-
-    <Button
-        android:id="@+id/music_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="37dp"
-        android:text="无名电台" />
-
-    <Button
-        android:id="@+id/movie_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/music_btn"
-        android:layout_below="@+id/music_btn"
-        android:layout_marginTop="36dp"
-        android:text="周末影院" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_above="@+id/teemo"
         android:layout_alignLeft="@+id/movie_btn"
+        android:layout_alignTop="@+id/radio_btn"
+        android:text="【时光电台，每天晚23点，每天十首歌。希望优美的音符化作溪流洗去你每天的烦恼。】" />
+
+    <TextView
+        android:id="@+id/main_words"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radio_btn"
+        android:layout_alignParentTop="true"
+        android:textSize="17sp"
+        android:text="蔡蔡，快乐每一天！(^_^)∠※" />
+
+    <ImageButton
+        android:id="@+id/radio_btn"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_below="@+id/movie_btn"
-        android:layout_marginTop="23dp"
-        android:text="留言板" />
+        android:layout_toLeftOf="@+id/teemo"
+        android:padding="0dp"
+        android:background="@drawable/guitar" />
+
+    <TextView
+        android:id="@+id/movie_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/movie_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/radio_btn"
+        android:layout_alignTop="@+id/movie_btn"
+        android:text="【藤井树影院，每周一部经典优秀高品质的电影。温馨而又清新的喜剧。重温那些刻录在胶卷中的美好时光。】" />
+
+    <TextView
+        android:id="@+id/teemo_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radio_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/radio_btn"
+        android:layout_alignTop="@+id/teemo"
+        android:text="【teemo的召唤师峡谷之旅，我种下一路蘑菇,只为让你找到回家的路。这里会不定期更新lol的视频，会有蔡蔡2312。(^_^)】" />
+
+    <ImageButton
+        android:id="@+id/movie_btn"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/teemo"
+        android:layout_below="@+id/main_words"
+        android:layout_marginTop="54dp"
+        android:padding="0dp"
+        android:background="@drawable/moviebtn_img" />
 
 </RelativeLayout>
