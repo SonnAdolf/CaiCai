@@ -20,7 +20,7 @@ public class TeemoVideoActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.teemo_video_layout);
 
-		String videoUrl2 = "http://118.89.29.170/movie/movie.mp4";
+		String videoUrl2 = "http://119.29.173.183:8080/movie/20170413-22-2-53s.avi";
 
 		Uri uri = Uri.parse(videoUrl2);
 

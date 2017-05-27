@@ -23,11 +23,18 @@ public final class R {
     public static final class drawable {
         public static final int background_main=0x7f020000;
         public static final int background_main2=0x7f020001;
-        public static final int guitar=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int love=0x7f020004;
-        public static final int moviebtn_img=0x7f020005;
-        public static final int teemo=0x7f020006;
+        public static final int background_main3=0x7f020002;
+        public static final int background_main4=0x7f020003;
+        public static final int background_main5=0x7f020004;
+        public static final int background_main6=0x7f020005;
+        public static final int background_main7=0x7f020006;
+        public static final int background_main8=0x7f020007;
+        public static final int background_main9=0x7f020008;
+        public static final int guitar=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int love=0x7f02000b;
+        public static final int moviebtn_img=0x7f02000c;
+        public static final int teemo=0x7f02000d;
     }
     public static final class id {
         public static final int action_settings=0x7f08000b;
