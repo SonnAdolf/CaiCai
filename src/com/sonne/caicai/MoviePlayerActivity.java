@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.MediaController;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -47,6 +48,15 @@ public class MoviePlayerActivity extends Activity {
 		layoutParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
 		layoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
 		videoView.setLayoutParams(layoutParams);
+		videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {  
+	        @Override  
+	        public void onPrepared(MediaPlayer mediaPlayer) {  
+	            //Called when the video is ready to play  
+	            View placeholder = findViewById(R.id.placeholder);  
+
+	            placeholder.setVisibility(View.GONE);  
+	        }  
+	    });  
 
 		// 开始播放视频
 		videoView.start();
