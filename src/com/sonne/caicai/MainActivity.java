@@ -31,50 +31,49 @@ public class MainActivity extends Activity {
 	 * ÀÊª˙…Ë÷√±≥æ∞Õº∆¨
 	 * 2017-05-27
 	 */
-	@SuppressLint("NewApi")
-	private void setBackgroundImg() {
-		RelativeLayout rl = (RelativeLayout) findViewById(R.id.main_layout);
-		Drawable drawable = getResources().getDrawable(
-				R.drawable.background_main);
-		Drawable drawable2 = getResources().getDrawable(
-				R.drawable.background_main2);
-		Drawable drawable3 = getResources().getDrawable(
-				R.drawable.background_main3);
-		Drawable drawable4 = getResources().getDrawable(
-				R.drawable.background_main4);
-		Drawable drawable5 = getResources().getDrawable(
-				R.drawable.background_main5);
-		Drawable drawable6 = getResources().getDrawable(
-				R.drawable.background_main6);
-		Drawable drawable7 = getResources().getDrawable(
-				R.drawable.background_main7);
-		Drawable drawable8 = getResources().getDrawable(
-				R.drawable.background_main8);
-		Drawable drawable9 = getResources().getDrawable(
-				R.drawable.background_main9);
-		
-		int s = new Random().nextInt(9) + 1;
-
-		if (s == 1) {
-			rl.setBackground(drawable);
-		} else if (s == 2){
-			rl.setBackground(drawable2);
-		} else if (s == 3){
-			rl.setBackground(drawable3);
-		} else if (s == 4){
-			rl.setBackground(drawable4);
-		} else if (s == 5){
-			rl.setBackground(drawable5);
-		} else if (s == 6){
-			rl.setBackground(drawable6);
-		} else if (s == 7){
-			rl.setBackground(drawable7);
-		} else if (s == 8){
-			rl.setBackground(drawable8);
-		} else if (s == 9){
-			rl.setBackground(drawable9);
-		} 
-	}
+//	@SuppressLint("NewApi")
+//	private void setBackgroundImg() {
+//		RelativeLayout rl = (RelativeLayout) findViewById(R.id.main_layout);
+//		Drawable drawable = getResources().getDrawable(
+//				R.drawable.background_main);
+//		Drawable drawable2 = getResources().getDrawable(
+//				R.drawable.background_main2);
+//		Drawable drawable3 = getResources().getDrawable(
+//				R.drawable.background_main3);
+//		Drawable drawable4 = getResources().getDrawable(
+//				R.drawable.background_main4);
+//		Drawable drawable5 = getResources().getDrawable(
+//				R.drawable.background_main5);
+//		Drawable drawable6 = getResources().getDrawable(
+//				R.drawable.background_main6);
+//		Drawable drawable7 = getResources().getDrawable(
+//				R.drawable.background_main7);
+//		Drawable drawable8 = getResources().getDrawable(
+//				R.drawable.background_main8);
+//		Drawable drawable9 = getResources().getDrawable(
+//				R.drawable.background_main9);
+//		int s = new Random().nextInt(9) + 1;
+//
+//		if (s == 1) {
+//			rl.setBackground(drawable);
+//		} else if (s == 2){
+//			rl.setBackground(drawable2);
+//		} else if (s == 3){
+//			rl.setBackground(drawable3);
+//		} else if (s == 4){
+//			rl.setBackground(drawable4);
+//		} else if (s == 5){
+//			rl.setBackground(drawable5);
+//		} else if (s == 6){
+//			rl.setBackground(drawable6);
+//		} else if (s == 7){
+//			rl.setBackground(drawable7);
+//		} else if (s == 8){
+//			rl.setBackground(drawable8);
+//		} else if (s == 9){
+//			rl.setBackground(drawable9);
+//		} 
+//	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +86,7 @@ public class MainActivity extends Activity {
 			Log.d(TAG, tempData);
 		}
 		
-		setBackgroundImg();
+		//setBackgroundImg();
 
 		TextView tv1 = (TextView) findViewById(R.id.main_words);
 		tv1.getPaint().setFakeBoldText(true);

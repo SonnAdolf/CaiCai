@@ -4,11 +4,17 @@ import android.app.Activity;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.MediaController;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+/**
+ * @author sonne
+ * @date 2017-05-15
+ * @description The activity of lol video player.
+ */
 public class TeemoVideoActivity extends Activity {
 	
 	public static final String TAG = "TeemoVideoActivity";
@@ -20,7 +26,7 @@ public class TeemoVideoActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.teemo_video_layout);
 
-		String videoUrl2 = "http://119.29.173.183:8080/movie/20170413-22-2-53s.avi";
+		String videoUrl2 = "http://119.29.173.183:8080/movie/2.mp4";
 
 		Uri uri = Uri.parse(videoUrl2);
 
@@ -42,6 +48,15 @@ public class TeemoVideoActivity extends Activity {
 		layoutParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
 		layoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
 		videoView.setLayoutParams(layoutParams);
+		videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {  
+	        @Override  
+	        public void onPrepared(MediaPlayer mediaPlayer) {  
+	            //Called when the video is ready to play  
+	            View placeholder = findViewById(R.id.placeholder);  
+
+	            placeholder.setVisibility(View.GONE);  
+	        }  
+	    });  
 
 		// 开始播放视频
 		videoView.start();

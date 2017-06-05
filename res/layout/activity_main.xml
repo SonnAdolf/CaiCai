@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_main8"
     tools:context=".MainActivity" >
 
     <ImageButton
@@ -27,7 +28,7 @@
         android:layout_above="@+id/teemo"
         android:layout_alignLeft="@+id/movie_btn"
         android:layout_alignTop="@+id/radio_btn"
-        android:text="【时光电台，每天晚23点，每天十首歌。希望优美的音符化作溪流洗去你每天的烦恼。】" />
+        android:text="【时光电台、每天23点，准时更新九首歌。希望优美的音符化作涓涓溪流，洗去你的烦恼。时光流逝，一切都在变，唯有我们的友谊天长地久，每一天每一小时每一秒。】" />
 
     <TextView
         android:id="@+id/main_words"
@@ -55,7 +56,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignRight="@+id/radio_btn"
         android:layout_alignTop="@+id/movie_btn"
-        android:text="【藤井树影院，每周一部经典优秀高品质的电影。温馨而又清新的喜剧。重温那些刻录在胶卷中的美好时光。】" />
+        android:text="【绿叶影院，不定期更新一部经典优秀高品质的电影。无聊的时候可以看看哦。会多选取一些温馨而又清新的喜剧。重温那些刻录在胶卷中的美好时光。】" />
 
     <TextView
         android:id="@+id/teemo_txt"
@@ -65,7 +66,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/radio_btn"
         android:layout_alignTop="@+id/teemo"
-        android:text="【teemo的召唤师峡谷之旅，我种下一路蘑菇,只为让你找到回家的路。这里会不定期更新lol的视频，会有蔡蔡2312。(^_^)】" />
+        android:text="【提莫小站，我种下一路蘑菇，只为让你找到回家的路。这里会不定期更新英雄联盟有关的视频，会有蔡蔡2312这个id出现。(^_^)】" />
 
     <ImageButton
         android:id="@+id/movie_btn"

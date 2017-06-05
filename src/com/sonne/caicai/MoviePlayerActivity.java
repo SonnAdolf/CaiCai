@@ -26,7 +26,7 @@ public class MoviePlayerActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.movie_player_layout);
 		
-		String videoUrl2 = "http://119.29.173.183:8080/movie/tkzc.avi";
+		String videoUrl2 = "http://119.29.173.183:8080/movie/1.mp4";
 
 		Uri uri = Uri.parse(videoUrl2);
 

@@ -22,7 +22,7 @@
     <FrameLayout  
       android:id="@+id/placeholder"  
       android:layout_width="fill_parent"  
-      android:layout_height="fill_parent" android:background="@drawable/loading_img">  
+      android:layout_height="fill_parent" android:background="@drawable/loading_img2">  
     </FrameLayout>  
  
   </RelativeLayout>

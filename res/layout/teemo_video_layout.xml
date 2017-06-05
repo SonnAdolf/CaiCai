@@ -18,7 +18,13 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       />
- 
+    
+    <FrameLayout  
+      android:id="@+id/placeholder"  
+      android:layout_width="fill_parent"  
+      android:layout_height="fill_parent" android:background="@drawable/loading_img1">  
+    </FrameLayout>  
+    
   </RelativeLayout>
  
  

@@ -19,7 +19,7 @@ import android.webkit.WebViewClient;
 public class MusicPlayerActivity extends Activity {
 
 	public static final String TAG = "MusicPlayerActivity";
-	private final String urlpath = "http://118.89.29.170/player/wuming_radio.html";
+	private final String urlpath = "http://118.89.29.170/myxx/xx.html";
 	private WebView webview;
 
 	@SuppressLint({ "SetJavaScriptEnabled", "NewApi" })
